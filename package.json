@@ -1,0 +1,23 @@
+{
+  "name": "d3js-angular2-example",
+  "version": "1.0.0",
+  "description": "This project shows how to integrate D3.js with Angular 2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datencia/d3js-angular2-example.git"
+  },
+  "keywords": [
+    "angular2",
+    "d3js"
+  ],
+  "author": "David Atencia <david.atencia@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/datencia/d3js-angular2-example/issues"
+  },
+  "homepage": "https://github.com/datencia/d3js-angular2-example#readme"
+}
