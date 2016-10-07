@@ -12,3 +12,23 @@ by Mike Bostock as the starting point to then migrate it to Angular2.
 Install [Node.js and npm](https://nodejs.org/en/) if they are not already installed on your computer.
 
 > Verify that you are running at least node v6.x.x and npm 3.x.x by running node -v and npm -v in a terminal / console window. Older versions may produce errors.
+
+## Steps
+
+- Clone this repo into a new project folder.
+
+ ```bash
+ $ git clone https://github.com/datencia/d3js-angular2-example.git
+ $ cd d3js-angular2-example
+ ```
+
+- Install the npm packages described in the `package.json` and verify that it works:
+
+ ```bash
+ $ npm install
+ ```
+- Execute the example:
+
+ ```bash
+ $ npm start
+ ```
