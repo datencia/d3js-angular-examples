@@ -5,7 +5,7 @@ This project shows how to integrate D3.js with Angular 2.
 We'll implement an example that uses the article [Multi-Series Line Chart](http://bl.ocks.org/mbostock/3884955)
 by Mike Bostock as the starting point to then migrate it to Angular2.
 
-![Multi-Series Line Chart](99_readme_resources/screenshot.png "Multi-Series Line Chart")
+![Multi-Series Line Chart](../99_readme_resources/02_multi_series_line_chart/screenshot.png "Multi-Series Line Chart")
 
 ## Prerequisites
 
@@ -35,4 +35,4 @@ Install [Node.js and npm](https://nodejs.org/en/) if they are not already instal
 
 - Then, load http://localhost:8080/ in a browser to see the output.
 
- ![Multi-Series Line Chart](99_readme_resources/browser_output.png "Multi-Series Line Chart")
+ ![Multi-Series Line Chart](../99_readme_resources/02_multi_series_line_chart/browser_output.png "Multi-Series Line Chart")
