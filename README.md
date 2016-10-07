@@ -32,3 +32,7 @@ Install [Node.js and npm](https://nodejs.org/en/) if they are not already instal
  ```bash
  $ npm start
  ```
+
+- Then, load http://localhost:8080/ in a browser to see the output.
+
+ ![Multi-Series Line Chart](99_readme_resources/browser_output.png "Multi-Series Line Chart")
