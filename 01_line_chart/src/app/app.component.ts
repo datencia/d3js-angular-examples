@@ -6,7 +6,7 @@ import * as d3Shape from "d3-shape";
 import * as d3Array from "d3-array";
 import * as d3Axis from "d3-axis";
 
-import { stocks, Stock } from './shared/data';
+import { Stocks } from './shared/data';
 
 @Component({
   selector: 'app-root',
@@ -50,8 +50,8 @@ export class AppComponent implements OnInit {
   private initAxis() {
     this.x = d3Scale.scaleTime().range([0, this.width]);
     this.y = d3Scale.scaleLinear().range([this.height, 0]);
-    this.x.domain(d3Array.extent(stocks, (d) => d.date ));
-    this.y.domain(d3Array.extent(stocks, (d) => d.value ));
+    this.x.domain(d3Array.extent(Stocks, (d) => d.date ));
+    this.y.domain(d3Array.extent(Stocks, (d) => d.value ));
   }
 
   private drawAxis() {
@@ -75,11 +75,11 @@ export class AppComponent implements OnInit {
 
   private drawLine() {
     this.line = d3Shape.line()
-                       .x( (d) => this.x(d.date) )
-                       .y( (d) => this.y(d.value) );
+                       .x( (d: any) => this.x(d.date) )
+                       .y( (d: any) => this.y(d.value) );
 
     this.svg.append("path")
-            .datum(stocks)
+            .datum(Stocks)
             .attr("class", "line")
             .attr("d", this.line);
   }
