@@ -7,7 +7,7 @@ in Angular2.
 
 ## Examples Summary
 
-- 01 Line Chart
+- [01 Line Chart](https://github.com/datencia/d3js-angular2-example/tree/master/01_line_chart)
 - [02 Multi-Series Line Chart](https://github.com/datencia/d3js-angular2-example/tree/master/02_multi_series_line_chart)
 - 03 Bar Chart
 - 04 Stacked Bar Chart
