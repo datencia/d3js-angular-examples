@@ -9,7 +9,7 @@ in Angular2.
 
 - [01 Line Chart](https://github.com/datencia/d3js-angular2-example/tree/master/01_line_chart)
 - [02 Multi-Series Line Chart](https://github.com/datencia/d3js-angular2-example/tree/master/02_multi_series_line_chart)
-- 03 Bar Chart
+- [03 Bar Chart](https://github.com/datencia/d3js-angular2-example/tree/master/03_bar_chart)
 - 04 Stacked Bar Chart
 - 05 Brush & Zoom
 - 06 Pie Chart
