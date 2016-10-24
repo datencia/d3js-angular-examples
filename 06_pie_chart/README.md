@@ -1,4 +1,4 @@
-# Line Chart
+# Pie Chart
 
 We'll implement the example described in [Pie Chart](http://bl.ocks.org/mbostock/3887235)
 by Mike Bostock in Angular 2.
