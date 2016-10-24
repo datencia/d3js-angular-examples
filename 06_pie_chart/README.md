@@ -35,3 +35,5 @@ Clone this repo into a new project folder if it's not already done.
  ```
 
 - Then, load http://localhost:8080/ in a browser to see the output.
+
+ ![Pie Chart](../99_readme_resources/06_pie_chart/browser_output.png "Bar Chart")
