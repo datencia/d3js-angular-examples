@@ -18,6 +18,11 @@ export interface Margin {
     left: number;
 }
 
+interface Stock {
+    date: Date;
+    price: number;
+}
+
 @Component({
   selector: 'app-root',
   template: `
@@ -38,7 +43,7 @@ export class AppComponent implements OnInit {
   private height: number;
   private height2: number;
 
-  private svg: any;
+  private svg: any;     // TODO replace all `any` by the right type
 
   private x: any;
   private x2: any;
@@ -64,13 +69,16 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.initMargins();
     this.initSvg();
-    let sp500c = sp500.map(v => <any>{date: this.parseDate(v.date), price: v.price});
-    this.drawChart(sp500c);
+    this.drawChart(this.parseData(sp500));
   }
 
   private initMargins() {
     this.margin = {top: 20, right: 20, bottom: 110, left: 40};
     this.margin2 = {top: 430, right: 20, bottom: 30, left: 40};
+  }
+
+  private parseData(data: any[]): Stock[] {
+    return data.map(v => <Stock>{date: this.parseDate(v.date), price: v.price});
   }
 
   private initSvg() {
@@ -146,10 +154,10 @@ export class AppComponent implements OnInit {
     this.context.select('.brush').call(this.brush.move, this.x.range().map(t.invertX, t));
   }
 
-  private drawChart(data) {
+  private drawChart(data: Stock[]) {
 
-    this.x.domain(d3Array.extent(data, (d: any) => d.date));
-    this.y.domain([0, d3Array.max(data, (d: any) => d.price)]);
+    this.x.domain(d3Array.extent(data, (d: Stock) => d.date));
+    this.y.domain([0, d3Array.max(data, (d: Stock) => d.price)]);
     this.x2.domain(this.x.domain());
     this.y2.domain(this.y.domain());
 
