@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
