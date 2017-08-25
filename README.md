@@ -13,7 +13,7 @@ in Angular2.
 - [04 Stacked Bar Chart](https://github.com/datencia/d3js-angular2-example/tree/master/04_stacked_bar_chart)
 - [05 Brush & Zoom](https://github.com/datencia/d3js-angular2-example/tree/master/05_brush_zoom)
 - [06 Pie Chart](https://github.com/datencia/d3js-angular2-example/tree/master/06_pie_chart)
-- 07 Donut Chart
+- [07 Donut Chart](https://github.com/datencia/d3js-angular2-example/tree/master/07_donut_chart)
 
 ## Prerequisites
 
