@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 import * as d3 from 'd3-selection';
-import * as d3Scale from "d3-scale";
-import * as d3Shape from "d3-shape";
-import * as d3Array from "d3-array";
-import * as d3Axis from "d3-axis";
+import * as d3Scale from 'd3-scale';
+import * as d3Shape from 'd3-shape';
+import * as d3Array from 'd3-array';
+import * as d3Axis from 'd3-axis';
 
 import { Stocks } from './shared/data';
 
@@ -30,12 +30,12 @@ export class AppComponent implements OnInit {
   private line: d3Shape.Line<[number, number]>;
 
   constructor() {
-    this.width = 900 - this.margin.left - this.margin.right ;
+    this.width = 900 - this.margin.left - this.margin.right;
     this.height = 500 - this.margin.top - this.margin.bottom;
   }
 
   ngOnInit() {
-    this.initSvg()
+    this.initSvg();
     this.initAxis();
     this.drawAxis();
     this.drawLine();
@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
   private initSvg() {
     this.svg = d3.select("svg")
                  .append("g")
-                 .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");;
+                 .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
   }
 
   private initAxis() {

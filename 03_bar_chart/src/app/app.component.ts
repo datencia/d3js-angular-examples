@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 import * as d3 from 'd3-selection';
-import * as d3Scale from "d3-scale";
-import * as d3Array from "d3-array";
-import * as d3Axis from "d3-axis";
+import * as d3Scale from 'd3-scale';
+import * as d3Array from 'd3-array';
+import * as d3Axis from 'd3-axis';
 
 import { STATISTICS } from './shared/data';
 
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.initSvg()
+    this.initSvg();
     this.initAxis();
     this.drawAxis();
     this.drawBars();
@@ -40,10 +40,10 @@ export class AppComponent implements OnInit {
 
   private initSvg() {
     this.svg = d3.select("svg");
-    this.width = +this.svg.attr("width") - this.margin.left - this.margin.right ;
+    this.width = +this.svg.attr("width") - this.margin.left - this.margin.right;
     this.height = +this.svg.attr("height") - this.margin.top - this.margin.bottom;
     this.g = this.svg.append("g")
-                     .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");;
+                     .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
   }
 
   private initAxis() {

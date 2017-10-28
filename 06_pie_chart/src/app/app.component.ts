@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import * as d3 from 'd3-selection';
-import * as d3Scale from "d3-scale";
-import * as d3Shape from "d3-shape";
+import * as d3Scale from 'd3-scale';
+import * as d3Shape from 'd3-shape';
 
 import { Stats } from './shared/data';
 
@@ -31,13 +31,13 @@ export class AppComponent implements OnInit {
   private svg: any;
 
   constructor() {
-    this.width = 900 - this.margin.left - this.margin.right ;
+    this.width = 900 - this.margin.left - this.margin.right;
     this.height = 500 - this.margin.top - this.margin.bottom;
     this.radius = Math.min(this.width, this.height) / 2;
   }
 
   ngOnInit() {
-    this.initSvg()
+    this.initSvg();
     this.drawPie();
   }
 
@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
                       .value((d: any) => d.population);
     this.svg = d3.select("svg")
                  .append("g")
-                 .attr("transform", "translate(" + this.width / 2 + "," + this.height / 2 + ")");;
+                 .attr("transform", "translate(" + this.width / 2 + "," + this.height / 2 + ")");
   }
 
   private drawPie() {
