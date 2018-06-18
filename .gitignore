@@ -1,22 +1,39 @@
-# Logs
-logs
-*.log
-npm-debug.log*
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Runtime data
-pids
-*.pid
-*.seed
+# compiled output
+/dist
+/tmp
+/out-tsc
 
-# Compiled binary
-dist
+# dependencies
+/node_modules
 
-# Dependency directories
-node_modules
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-# Optional npm cache directory
-.npm
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-# Transpiled files
-src/**/*.js
-src/**/*.js.map
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
