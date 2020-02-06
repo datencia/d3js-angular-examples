@@ -23,7 +23,7 @@ export class LineChartComponent implements OnInit {
     private height: number;
     private x: any;
     private y: any;
-    private svg: any;
+    private svg: any; 
     private line: d3Shape.Line<[number, number]>;
 
     constructor() {
